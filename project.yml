@@ -1,0 +1,21 @@
+name: WhatsNewSwift63And64
+options:
+  bundleIdPrefix: com.bleepingswift
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "27.0"
+  generateEmptyDirectories: true
+settings:
+  SWIFT_VERSION: "6.0"
+  SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  WhatsNewSwift63And64:
+    type: framework
+    platform: iOS
+    sources:
+      - path: WhatsNewSwift63And64/Sources
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.bleepingswift.whatsnewswift63and64
+      GENERATE_INFOPLIST_FILE: true
